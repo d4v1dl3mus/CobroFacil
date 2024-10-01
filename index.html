@@ -68,6 +68,17 @@
                             <p id="typed-1" class="wow fadeInLeft" data-wow-delay=".4s"></p>
                             <p id="typed-2" class="wow fadeInLeft" data-wow-delay=".6s"></p>
                             <p id="typed-3" class="wow fadeInLeft" data-wow-delay=".8s"></p>
+                            <br>
+                            <br>
+                            <div id="waitlist">
+                                <p>¡Únete a nuestra lista de espera!</p>
+                                <p>Los primeros 100 usuarios recibirán un <strong>50% de descuento</strong> en los
+                                    primeros
+                                    2 meses.</p>
+                                <div class="btn-2">
+                                    <a href=""><span>Unirme a la lista de espera</span></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -85,8 +96,7 @@
                         class="lni lni-facebook-filled"></i></a>
                 <a href="https://www.linkedin.com/company/noho-digital" target="_blank"><i
                         class="lni lni-linkedin-original"></i></a>
-                <a href="https://www.instagram.com/nohodigital/" target="_blank"><i
-                        class="lni lni-instagram"></i></a>
+                <a href="https://www.instagram.com/nohodigital/" target="_blank"><i class="lni lni-instagram"></i></a>
             </div>
         </div>
     </footer>
@@ -139,6 +149,12 @@
             showCursor: true,
             onComplete: function () {
                 document.querySelector("#typed-3").classList.remove('typing-effect');
+                // Mostrar el contenedor de la lista de espera
+                // document.getElementById("waitlist").style.display = "block";
+                // Mostrar el contenedor de la lista de espera con animación
+                setTimeout(function () {
+                    document.getElementById("waitlist").classList.add("fade-in");
+                }, 500); // Retraso de 500ms antes de la animación
             }
         });
     </script>
